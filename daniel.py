@@ -6,7 +6,7 @@ wiek_test = int(wiek)
 wiek_test = float(wiek_test)
 if (wiek != wiek_test):
     print("Albo się pomyliłeś albo jesteś głupi - swój wiek podajemy pełnymi latami!")
-    wiek = input("Podaj ile masz lat, SKUP SIĘ, powolutku: ")
+    wiek = input("Proszę, podaj ile masz lat, SKUP SIĘ, powolutku: ")
     wiek = int(wiek)
 else:
     wiek = int(wiek)
