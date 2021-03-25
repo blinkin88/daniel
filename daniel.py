@@ -14,7 +14,7 @@ kiedy_urodziny = 2121 - wiek
 kiedy_urodziny = str(kiedy_urodziny)
 print("Super sprawa " + imię + " w " + kiedy_urodziny + " roku będziesz miał 100 lat")
 
-print("A teraz mój system obliczeniowy sprawdzi czy podana przez ciebie liczba jest parzysta")
+print("Hej, a teraz mój system obliczeniowy sprawdzi czy podana przez ciebie liczba jest parzysta")
 print("Od razu sprawdzę też czy dzieli się przez 4")
 x = input("Podaj jakąś liczbę: ")
 y = float(x)
