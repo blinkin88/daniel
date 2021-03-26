@@ -1,14 +1,16 @@
 print("Jeśli chcesz policzę za ciebie kiedy będziesz miał/a setne urodziny!")
+import datetime
+x = datetime.datetime.now()
 imię = input("Podaj swoje imię: ")
 wiek = input("Podaj ile masz lat: ")
 wiek = int(wiek)
 uro = input("Czy miałeś/aś już w tym roku urodziny? (tak/nie): ")
 if uro == ("tak"):
-    kiedy_urodziny = 2121 - wiek
+    kiedy_urodziny = x.year - wiek + 100
     kiedy_urodziny = str(kiedy_urodziny)
     print("Super sprawa " + imię + " w " + kiedy_urodziny + " roku będziesz miał/a 100 lat")
 else:
-    kiedy_urodziny = 2120 - wiek
+    kiedy_urodziny = x.year - wiek + 99
     kiedy_urodziny = str(kiedy_urodziny)
     print("Super sprawa " + imię + " w " + kiedy_urodziny + " roku będziesz miał/a 100 lat")
 print("A teraz mój system obliczeniowy sprawdzi czy podana przez ciebie liczba jest parzysta")
