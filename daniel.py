@@ -5,14 +5,16 @@ imię = input("Podaj swoje imię: ")
 wiek = input("Podaj ile masz lat: ")
 wiek = int(wiek)
 uro = input("Czy miałeś/aś już w tym roku urodziny? (tak/nie): ")
-if uro == ("tak"):
-    kiedy_urodziny = x.year - wiek + 100
-    kiedy_urodziny = str(kiedy_urodziny)
-    print("Super sprawa. " + imię + " w " + kiedy_urodziny + " roku będziesz miał/a 100 lat")
-else:
-    kiedy_urodziny = x.year - wiek + 99
-    kiedy_urodziny = str(kiedy_urodziny)
-    print("Super sprawa " + imię + " w " + kiedy_urodziny + " roku będziesz miał/a 100 lat")
+urodzinytak = x.year - wiek + 100
+urodzinytak = str(urodzinytak)
+urodzinynie = x.year - wiek + 99
+urodzinynie = str(urodzinynie)
+def funk1():
+    if uro == ("tak"):
+        print("Super sprawa. " + imię + " w " + urodzinytak + " roku będziesz miał/a 100 lat")
+    else:
+        print("Super sprawa. " + imię + " w " + urodzinynie + " roku będziesz miał/a 100 lat")
+funk1()
 print("Hej, a teraz mój system obliczeniowy sprawdzi czy podana przez ciebie liczba jest parzysta")
 print("Od razu sprawdzę też czy dzieli się przez 4")
 x = input("Podaj jakąś liczbę: ")
@@ -32,7 +34,7 @@ w = input("I kolejną: ")
 q = float(q)
 w = float(w)
 if (q % w == 0):
-    print("Brawo, to też się dzieli przez siebie, +3 punkty.")
+    print("Brawo, to się dzieli przez siebie, +3 punkty.")
 else:
-    print("Chujnia, te liczby są niepodzielne, - 4 punkty.")
+    print("Lipa, te liczby są niepodzielne, - 4 punkty.")
 input()
