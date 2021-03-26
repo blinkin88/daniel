@@ -1,28 +1,23 @@
-print("Jeśli chcesz policzę za ciebie kiedy będziesz miał setne urodziny!")
+print("Jeśli chcesz policzę za ciebie kiedy będziesz miał/a setne urodziny!")
+import datetime
+x = datetime.datetime.now()
 imię = input("Podaj swoje imię: ")
 wiek = input("Podaj ile masz lat: ")
-wiek = float(wiek)
-wiek_test = int(wiek)
-wiek_test = float(wiek_test)
-if (wiek != wiek_test):
-    print("Albo się pomyliłeś albo jesteś głupi - swój wiek podajemy pełnymi latami!")
-    wiek = input("Proszę, podaj ile masz lat, SKUP SIĘ, powolutku: ")
-    wiek = int(wiek)
+wiek = int(wiek)
+uro = input("Czy miałeś/aś już w tym roku urodziny? (tak/nie): ")
+if uro == ("tak"):
+    kiedy_urodziny = x.year - wiek + 100
+    kiedy_urodziny = str(kiedy_urodziny)
+    print("Super sprawa " + imię + " w " + kiedy_urodziny + " roku będziesz miał/a 100 lat")
 else:
-    wiek = int(wiek)
-kiedy_urodziny = 2121 - wiek
-kiedy_urodziny = str(kiedy_urodziny)
-print("Super sprawa " + imię + " w " + kiedy_urodziny + " roku będziesz miał 100 lat")
-
-print("Hej, a teraz mój system obliczeniowy sprawdzi czy podana przez ciebie liczba jest parzysta")
 print("Od razu sprawdzę też czy dzieli się przez 4")
 x = input("Podaj jakąś liczbę: ")
 y = float(x)
 r = y % 2
 if (r == 1):
-    print("Wpisałeś liczbę niepażystą, koniec gry")
+    print("Wpisałeś/aś liczbę niepażystą, koniec gry")
 else:
-    print("Brawo, wpisałeś liczbę parzystą, + 5 punktów!")
+    print("Brawo, wpisałeś/aś liczbę parzystą, + 5 punktów!")
     if (y % 4 == 0):
         print("Super, w dodatku da się ją podzielić przez 4, + 2 punkty.")
     else:
@@ -36,3 +31,4 @@ if (q % w == 0):
     print("Brawo, to też się dzieli przez siebie, +3 punkty.")
 else:
     print("Chujnia, te liczby są niepodzielne, - 4 punkty.")
+input()
