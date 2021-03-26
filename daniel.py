@@ -8,7 +8,7 @@ uro = input("Czy miałeś/aś już w tym roku urodziny? (tak/nie): ")
 if uro == ("tak"):
     kiedy_urodziny = x.year - wiek + 100
     kiedy_urodziny = str(kiedy_urodziny)
-    print("Super sprawa " + imię + " w " + kiedy_urodziny + " roku będziesz miał/a 100 lat")
+    print("Super sprawa. " + imię + " w " + kiedy_urodziny + " roku będziesz miał/a 100 lat")
 else:
     kiedy_urodziny = x.year - wiek + 99
     kiedy_urodziny = str(kiedy_urodziny)
